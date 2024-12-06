@@ -42,3 +42,7 @@ function exportExcel() {
     const workbook = XLSX.utils.table_to_book(table, { sheet: "Contatos" });
     XLSX.writeFile(workbook, "lista_contatos_nissan.xlsx");
 }
+
+function printPage() {
+    window.print();
+}
